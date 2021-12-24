@@ -23,5 +23,8 @@ It operates on wav and mp3 files, which can be used as:
 # ./rnnoise_demo input.mp3
 ```
 
+
+Credits : [ZhiHan Gao](https://github.com/cpuimage/rnnoise)
+
 ## License
 This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
