@@ -1,5 +1,7 @@
 ## RNNOISE-COLAB DEMO
 
+[![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lBx156kISjDKdMNZBV5UiPQNPLRN9Ld2)
+
 RNNoise is a noise suppression library based on a recurrent neural network.
 
 #Quick Demo application
