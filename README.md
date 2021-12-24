@@ -1,5 +1,6 @@
 # RNNoise is a noise suppression library based on a recurrent neural network
 
+[![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz)
 
 ## Quick Demo application
 While it is meant to be used as a library, a simple command-line tool is
