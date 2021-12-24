@@ -1,10 +1,10 @@
 # RNNoise is a noise suppression library based on a recurrent neural network
 
-[![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz)
+[![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1e880USU8IcZWZlEJYfyeu9DNVGxpNd06)
 
 ## Quick Demo application
 While it is meant to be used as a library, a simple command-line tool is
-provided as an example.
+provided as an example. Here is a [Colab Demo](https://colab.research.google.com/drive/1e880USU8IcZWZlEJYfyeu9DNVGxpNd06) to Convert Raw Noised Audio to Cleaned Audio. 
 
 ### build librnnoise & rnnoise_demo with CMake
 
@@ -30,38 +30,15 @@ specify the output filename
 # ./rnnoise_demo input.mp3 output.wav
 ```
 
-## Training Process
-
-### Audio feature extract
-Build audio feature extraction tool
-```shell
-# cd src
-# ./train_compile.sh
-```
-Use generated "denoise_training" to get the audio feature array from speech & noise audio clip
-```shell
-# ./denoise_training
-usage: ./denoise_training <speech> <noise> <sample count> <output denoised>
-# ./denoise_training speech.wav noise.wav 50000 feature.dat
-matrix size: 50000 x 87
-```
-
-### RNN model traning
-Pick feature array to "training" dir and go through the training process
-```shell
-# cd training
-# mv ../src/feature.dat .
-# python bin2hdf5.py --bin_file feature.dat --matrix_shape 50000x87
-# python rnn_train.py
-# python dump_rnn.py
-```
-Training process will generate the RNN model weight code file (default is rnn_data.c) and layer definition header file (default is rnn_data.h). They can be used to refresh the "src/rnn_data.c", "src/rnn_data.h" and rebuild the rnnoise lib & demo app.
-
 # References and Resources:
 - [david8862/rnnoise](https://github.com/david8862/rnnoise)
 - [RNNoise: Learning Noise Suppression](https://people.xiph.org/~jm/demo/rnnoise/)
 - [RNNoise: Learning Noise Suppression（深度学习噪声抑制）](https://blog.csdn.net/dakeboy/article/details/88039977)
 - [基于RNN的音频降噪算法](https://cloud.tencent.com/developer/article/1094567)
+- [ZhiHan Gao](https://github.com/cpuimage/rnnoise)
+
+## License
+This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
 
 # Donating
 
