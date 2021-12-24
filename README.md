@@ -2,9 +2,9 @@
 
 RNNoise is a noise suppression library based on a recurrent neural network.
 
-Quick Demo application
+#Quick Demo application
 
-While it is meant to be used as a library, a simple command-line tool is provided as an example. Here is working (Colab Demo)[https://colab.research.google.com/drive/1lBx156kISjDKdMNZBV5UiPQNPLRN9Ld2?usp=sharing] to clean RAW Noisy input and get cleaned Output
+While it is meant to be used as a library, a simple command-line tool is provided as an example. Here is working [Colab Demo](https://colab.research.google.com/drive/1lBx156kISjDKdMNZBV5UiPQNPLRN9Ld2?usp=sharing) to clean RAW Noisy input and get cleaned Output
 
 build librnnoise & rnnoise_demo with CMake
 
